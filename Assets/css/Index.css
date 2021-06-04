@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
 
 
 
@@ -20,6 +22,7 @@
   --Comforta: "Comfortaa";
   --Nunito: "Nunito";
   --Sacramento: "Sacramento";
+  --Poppins: "Poppins";
   --Dark-Orange: rgb(252, 144, 2);
   --White: #fff;
   --Dark-Blue: #192244;;
@@ -524,15 +527,198 @@ flex-direction: column;
 .sec-5 .slider .owl-carousel {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+
 }
 .sec-5 .slider .owl-carousel   .slide{
   width: 100%;
   height: 100%;
-  overflow: hidden;
   text-align: center;
 }
 .sec-5 .slider .owl-carousel   .slide .content .testimony {
   line-height: 170%;
+  font-size: 20px;
+  margin-bottom: 10vh;
+ 
+}
+
+.sec-5 .slider .owl-carousel   .slide .content  .name {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+
+
+.sec-5 .slider .owl-carousel   .slide .content  .name .role {
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.sec-6 {
+  background: #dfb1c393;
+}
+
+.sec-6 .class {
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.021);
+  transition: all .4s ;
+} 
+
+.sec-6 .class .card-img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sec-6 .class .card-img img{
+  width: 100%;
+  border-radius: 10px;
+  z-index: 1;
+}
+.sec-6 .class:hover .card-img img{
+ transform: scale(1.01);
+ transition: all .4s ;
+}
+
+.sec-6 .class .card-body {
+background: #fff;
+z-index: 5;
+}
+
+
+
+
+.sec-6 .class .card-body {
+  padding-top: 20px;
+  position: relative;
+}
+
+
+.sec-6 .class .card-body .card-body-upper {
+  padding: 10px;
+}
+
+
+.sec-6 .class .card-body .card-body-upper .price{
+  background:  rgba(238, 177, 8, 0.966);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  top: -35px;
+  right: 30px;
+}
+.sec-6 .class:hover .card-body .card-body-upper .price{
+  background:  rgba(8, 203, 238, 0.966);
+}
+
+.sec-6 .class .card-body .card-body-upper .card-heading {
+  font-family: var(--Comforta);
+  font-size: 18pt;
+  font-family: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 10px;
+}
+.sec-6 .class .card-body .card-body-upper .card-heading:hover {
+ color: var(--Dark-Orange);
+ transition: all .4s;
+}
+.sec-6 .class .card-body .card-body-upper p{
+  line-height: 150%;
+  font-size: 16px;
+  
+}
+.sec-6 .class .card-body .hr-divider {
+  height: 3px;
+  width: 90%;
+  background: rgba(138, 136, 136, 0.404);
+  border-radius: 20px;
+  margin: 3px auto;
+}
+.sec-6 .class .card-body .card-body-lower {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+}
+.sec-6 .class .card-body .card-body-lower .box{
+  display: flex;
+  flex-direction: column;
+}
+.sec-6 .class .card-body .card-body-lower .box .required{
+  margin-bottom: 5px;
+  color: #a798b4;
+}
+.sec-6 .class .card-body .card-body-lower .box .requirements{
+  font-family: var(--Nunito);
+  font-family: 800;
+  font-size: 16px;
+  color: var(--Dark-Blue);
+}
+
+.sec-6 .class .card-body .card-body-lower .divider {
+  width: 2px;
+  height: 45px;
+  background: rgba(138, 136, 136, 0.404);
+  border-radius: 20px;
+}
+
+.sec-6 .class .card-body .button{
+width: 100%;
+padding: 10px 30px;
+background: var(--Dark-Orange);
+color: #fff;
+height: 10vh;
+text-align: center;
+z-index: 7;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: -10vh;
+left: 0;
+}
+
+.sec-6 .class:hover .card-body .button{ 
+bottom: 0;
+transition: all .4s;
+}
+
+
+.sec-6 .class .cta {
+color: #fff;
+}
+
+.sec-6 .heading {
+  text-align: center;
   margin-bottom: 30px;
+}
+.sec-6 .heading .curve {
+  font-family: var(--Sacramento);
+  font-size: 25pt;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: var(--Dark-Orange);
+}
+
+.sec-6 .heading .nunito {
+  font-family: var(--Comforta);
+  font-size: 30pt;
+  font-family: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 20px;
 }
