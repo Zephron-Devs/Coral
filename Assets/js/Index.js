@@ -20,29 +20,29 @@ window.addEventListener('scroll', function() {
 
     $('.testimonials').owlCarousel({
       items:1,
-      margin:10,
+      margin:20,
       autoHeight:true
   });
 
     $('.classes').owlCarousel({
-      items:3,
       loop:true,
-      margin:10,
+      center: true,
+      margin:5,
       autoHeight:true,
       responsiveClass:true,
       autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:3000,
     autoplayHoverPause:true,
       responsive:{
           0:{
               items:1,
-              nav:true
+              nav:false
           },
-          600:{
+          900:{
               items:2,
-              nav:true
+              nav:false
           },
-          1000:{
+          1200:{
               items:3,
               nav:true,
               loop:true
