@@ -204,6 +204,10 @@ header .menu .menu-item .menu-link:hover {
     top: 7.9vh;
     z-index: 897;
   }
+
+  main {
+    margin-top: 2.5vh;
+  }
 }
 
  .header {
