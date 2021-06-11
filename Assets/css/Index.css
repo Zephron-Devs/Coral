@@ -18,15 +18,28 @@
 
 
 
+
 :root {
   --Comforta: "Comfortaa";
   --Nunito: "Nunito";
   --Sacramento: "Sacramento";
   --Poppins: "Poppins";
-  --Dark-Orange: rgb(252, 144, 2);
+  --Dark-Orange: #ff8c00;
   --White: #fff;
   --Dark-Blue: #263361;
   --Blue-Violet: blueviolet;
+  --Color-1: #8ADFE3;
+  --Color-2: #55C5D1;
+  --Color-3: #4699C2;
+  --Color-4: #FFD57E;
+  --Color-5: #F79C65;
+  --Color-6: #FC8476;
+  --Color-7: #E25B45;
+  --Color-8: #FF8357;
+  --Color-9: #E7E7E7;
+  --Color-10: #F5CEC7;
+  --Color-11: #5A6794;
+  --Color-12: #565A97;
 }
 
 body {
@@ -210,7 +223,7 @@ main {
   width: 100%;
   height: 80vh;
   border-radius: 10px;
-  background: var(--Dark-Blue);
+  background: var(--Color-12);
   overflow: hidden;
    display: flex;
   padding: 5%;
@@ -366,7 +379,7 @@ main {
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -404,7 +417,7 @@ main {
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -472,7 +485,7 @@ border-radius: 8px;
   font-size: 13pt;
   font-weight: 800;
   line-height: 130%;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -522,7 +535,7 @@ z-index: -1;
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -562,7 +575,7 @@ z-index: -1;
   font-family: var(--Comforta);
   font-size: 25pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -592,7 +605,7 @@ z-index: -1;
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -717,7 +730,7 @@ z-index: 5;
   font-family: var(--Comforta);
   font-size: 18pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 10px;
 }
 .sec-6 .class .card-body .card-body-upper .card-heading:hover {
@@ -754,7 +767,7 @@ padding: 10px;
   font-family: var(--Nunito);
   font-family: 800;
   font-size: 16px;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
 }
 
 .sec-6 .class .card-body .card-body-lower .divider {
@@ -808,7 +821,7 @@ color: #fff;
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -836,7 +849,7 @@ color: #fff;
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -918,7 +931,7 @@ align-items: center;
   font-family: var(--Comforta);
   font-size: 15pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 5px;
 }
 .sec-7 .teachers .teacher .teacher-info  .role{
@@ -1000,7 +1013,7 @@ align-items: center;
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 30px;
 }
 
@@ -1130,7 +1143,7 @@ border-radius: 10px;
     position: absolute;
     right: 20px;
     top: 17px;
-    color: var(--Dark-Blue);
+    color: var(--Color-12);
     font-weight: 800;
     font-family: var(--Nunito);
   }
@@ -1664,7 +1677,7 @@ footer {
   font-family: var(--Comforta);
   font-size: 20pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -1683,7 +1696,7 @@ footer {
   font-family: var(--Comforta);
   font-size: 18pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -1691,7 +1704,7 @@ footer {
   font-family: var(--Comforta);
   font-size: 20pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 
@@ -1714,14 +1727,14 @@ footer {
   font-family: var(--Comforta);
   font-size: 20pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 .sec-7 .heading .nunito {
   font-family: var(--Comforta);
   font-size: 20pt;
   font-family: 700;
-  color: var(--Dark-Blue);
+  color: var(--Color-12);
   margin-bottom: 20px;
 }
 

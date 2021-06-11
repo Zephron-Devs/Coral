@@ -16,15 +16,28 @@
 
 
 
+
 :root {
   --Comforta: "Comfortaa";
   --Nunito: "Nunito";
   --Sacramento: "Sacramento";
   --Poppins: "Poppins";
-  --Dark-Orange: darkorange;
+  --Dark-Orange: #ff8c00;
   --White: #fff;
   --Dark-Blue: #263361;
   --Blue-Violet: blueviolet;
+  --Color-1: #8ADFE3;
+  --Color-2: #55C5D1;
+  --Color-3: #4699C2;
+  --Color-4: #FFD57E;
+  --Color-5: #F79C65;
+  --Color-6: #FC8476;
+  --Color-7: #E25B45;
+  --Color-8: #FF8357;
+  --Color-9: #E7E7E7;
+  --Color-10: #F5CEC7;
+  --Color-11: #5A6794;
+  --Color-12: #565A97;
 }
 
 .classPage .header {
@@ -62,7 +75,7 @@
 
 
 .classPage .class_container {
-    background: #dfb1c393;
+    background: var(--White);
   }
   
   .classPage .class_container .class {

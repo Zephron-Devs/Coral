@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+:root {
+  --Comforta: "Comfortaa";
+  --Nunito: "Nunito";
+  --Sacramento: "Sacramento";
+  --Poppins: "Poppins";
+  --Dark-Orange: #ff8c00;
+  --White: #fff;
+  --Dark-Blue: #263361;
+  --Blue-Violet: blueviolet;
+  --Color-1: #8ADFE3;
+  --Color-2: #55C5D1;
+  --Color-3: #4699C2;
+  --Color-4: #FFD57E;
+  --Color-5: #F79C65;
+  --Color-6: #FC8476;
+  --Color-7: #E25B45;
+  --Color-8: #FF8357;
+  --Color-9: #E7E7E7;
+  --Color-10: #F5CEC7;
+  --Color-11: #5A6794;
+  --Color-12: #565A97;
+  --Color-13: #ADC865;
+  --Color-14: #b6b6b6;
+}
+
+
+.Overview-Container .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .wrapper .class_overview, .wrapper .class_progress {
+    flex: 1;
+}
+
+ .wrapper .class_overview .heading {
+    font-size: 30pt;
+    margin-bottom: 20px;
+    color: var(--Color-12);
+}
+ .wrapper .class_overview .text {
+    line-height: 140%;
+    color: var(--Color-14);
+}
+.SeniorCurriculum .Senior-Overview-Container .wrapper {
+    
+}

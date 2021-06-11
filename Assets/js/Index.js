@@ -20,8 +20,12 @@ window.addEventListener('scroll', function() {
 
     $('.testimonials').owlCarousel({
       items:1,
+      loop: true,
       margin:20,
-      autoHeight:true
+      autoHeight:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
   });
 
     $('.classes').owlCarousel({

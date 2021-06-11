@@ -1,0 +1,401 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+
+:root {
+  --Comforta: "Comfortaa";
+  --Nunito: "Nunito";
+  --Sacramento: "Sacramento";
+  --Poppins: "Poppins";
+  --Dark-Orange: #ff8c00;
+  --White: #fff;
+  --Dark-Blue: #263361;
+  --Blue-Violet: blueviolet;
+  --Color-1: #8ADFE3;
+  --Color-2: #55C5D1;
+  --Color-3: #4699C2;
+  --Color-4: #FFD57E;
+  --Color-5: #F79C65;
+  --Color-6: #FC8476;
+  --Color-7: #E25B45;
+  --Color-8: #FF8357;
+  --Color-9: #E7E7E7;
+  --Color-10: #F5CEC7;
+  --Color-11: #5A6794;
+  --Color-12: #565A97;
+}
+
+.curriculumPage .header {
+    background: var(--Dark-Blue);
+}
+/* 
+.curriculumPage  .curriculum_container {
+    position: relative;
+}
+.curriculumPage  .curriculum_container .circle{
+    position: absolute;
+}
+.curriculumPage  .curriculum_container .particle.circle {
+
+}
+.curriculumPage  .curriculum_container .particle.circle img{
+    width: 100%;
+} */
+
+
+
+
+.curriculumPage  .curriculum_container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.curriculumPage  .curriculum_container .curriculum.single {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .class_name {
+    font-size: 20pt;
+    color: var(--Dark-Blue);
+    margin-bottom: 20px;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .class_description {
+    font-size: 14pt;
+    line-height: 130%;
+    color: rgba(0,0,0,0.5);
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image_box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: .5s;
+    margin-right: 30px;
+}
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image img{
+    width: 100%;
+}
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image .shade{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single:hover .curriculum_image .shade {
+    top: 0;
+    left: 0;
+    transition: .5s ease;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image .shade .link_item {
+    background: var(--White);
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20pt;
+    color: #263361;
+    transition: .5s ease;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image .shade .link_item:Hover {
+    background: var(--Dark-Blue);
+    color: var(--White);
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image_box .age_range {
+    background: var(--Dark-Orange);
+    color: var(--White);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+.curriculumPage  .curriculum_container .curriculum.single.playgroup .curriculum_image_box .age_range{
+  background: var(--Color-1);
+} 
+.curriculumPage  .curriculum_container .curriculum.single.nursery .curriculum_image_box .age_range{
+  background: var(--Color-13);
+} 
+.curriculumPage  .curriculum_container .curriculum.single.junior .curriculum_image_box .age_range{
+  background: var(--Color-4);
+} 
+.curriculumPage  .curriculum_container .curriculum.single.senior .curriculum_image_box .age_range{
+  background: var(--Color-7);
+} 
+
+
+
+  
+  
+
+  .curriculumPage .enrollment .heading {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 350%;
+    position: relative;
+    z-index: 5;
+  }
+  .curriculumPage .enrollment .heading .particles{
+    position: absolute;
+z-index: -1;
+  }
+
+
+
+  .curriculumPage .enrollment .heading .circle-green{
+    bottom: 15%;
+    right: 30%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--Dark-Orange);
+  }
+  .curriculumPage .enrollment .heading .circle-cyan {
+    top: 15%;
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 8px solid cyan;
+  }
+
+  .curriculumPage .enrollment .heading .circle-yellow{
+    bottom: 0;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: yellow;
+  }
+  .curriculumPage .enrollment .heading .circle-blue{
+    top: 10px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--Dark-Blue);
+  }
+  .curriculumPage .enrollment .heading .circle-red{
+    top: 35%;
+    right: 10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid red;
+  }
+  .curriculumPage .enrollment .heading .circle-blue-violet{
+    top: 5%;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--Blue-Violet);
+  }
+
+
+  
+
+  .curriculumPage .enrollment .heading .curve {
+    font-family: var(--Sacramento);
+    font-size: 25pt;
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--Dark-Orange);
+    z-index: 5;
+  }
+  
+
+  .curriculumPage .enrollment .heading .nunito {
+    font-family: var(--Comforta);
+    font-size: 30pt;
+    font-family: 700;
+    color: var(--Dark-Blue);
+    margin-bottom: 30px;
+    z-index: 6;
+  }
+  
+
+  .curriculumPage  .enrollment .heading .cta {
+    background: var(--Dark-Orange);
+    padding: 15px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: var(--Comforta);
+    color: var(--White);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 560px) {
+    .curriculumPage  .curriculum_container .curriculum.single {
+      display: flex;
+      justify-content: center;
+      width: 600px;
+      align-items: center;
+      margin-bottom: 5vh;
+  }
+
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image_box {
+  width: 150px;
+  height: 150px;
+
+}
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image {
+  width: 150px;
+  height: 150px;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image .shade{
+  top: -150px;
+  left: -150px;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .curriculum_image_box .age_range {
+  width: 55px;
+  height: 55px;
+  right: -5px;
+  top: -5px;
+  font-size: 10px;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .class_name {
+  font-size: 16pt;
+  color: var(--Dark-Blue);
+  margin-bottom: 20px;
+}
+
+.curriculumPage  .curriculum_container .curriculum.single .class_description {
+  font-size: 10pt;
+  line-height: 130%;
+  color: rgba(0,0,0,0.5);
+}
+
+.curriculumPage .enrollment .heading {
+  width: 80%;
+}
+
+.curriculumPage .enrollment .heading .curve {
+  font-family: var(--Sacramento);
+  font-size: 20pt;
+
+}
+
+.curriculumPage .enrollment .heading .nunito {
+  font-family: var(--Comforta);
+  font-size: 17pt;
+  font-family: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 20px;
+  z-index: 6;
+}
+
+
+
+.curriculumPage .enrollment .heading .circle-green{
+  bottom: 15%;
+  right: 1%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--Dark-Orange);
+}
+.curriculumPage .enrollment .heading .circle-cyan {
+  top: 25%;
+  left: -5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid cyan;
+}
+
+.curriculumPage .enrollment .heading .circle-yellow{
+  bottom: 0;
+  left: 1%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: yellow;
+}
+.curriculumPage .enrollment .heading .circle-blue{
+  top: 10px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--Dark-Blue);
+}
+.curriculumPage .enrollment .heading .circle-red{
+  top: 35%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  opacity: .5;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.curriculumPage .enrollment .heading .circle-blue-violet{
+  top: 5%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--Blue-Violet);
+}
+
+  }
+
+  
