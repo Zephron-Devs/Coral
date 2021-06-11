@@ -66,7 +66,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  transition: .5s;
 }
 
 header.sticky {
@@ -141,6 +140,7 @@ header .menu .menu-item .menu-link:hover {
   header {
     padding: 0 5%;
     z-index: 999;
+    height: 8vh;
   }
 
   header.sticky {
@@ -152,14 +152,14 @@ header .menu .menu-item .menu-link:hover {
   
   .toggle {
     display: block;
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
     position: relative;
   }
   .toggle .bar {
     width: 100%;
-    height: 5px;
-    background-color: #000;
+    height: 3px;
+    background-color: var(--Color-3);
     border-radius: 50px;
     position: absolute;
     left: 0;
@@ -168,30 +168,28 @@ header .menu .menu-item .menu-link:hover {
     transition: .3s;
   }
   .toggle #bar-3 {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+            transform: translateY(25px);
   }
   .toggle #bar-2 {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+            transform: translateY(13px);
   }
   .toggle.active #bar-1 {
-    -webkit-transform: translateY(15px) rotate(225deg);
-            transform: translateY(15px) rotate(225deg);
+            transform: translateY(10px) rotate(225deg);
   }
   .toggle.active #bar-2 {
     opacity: 0;
   }
   .toggle.active #bar-3 {
-    -webkit-transform: translateY(15px) rotate(-225deg);
-            transform: translateY(15px) rotate(-225deg);
+            transform: translateY(10px) rotate(-225deg);
   }
   .menu {
     position: absolute;
-    top: 10vh;
+    top: 7.7vh;
     width: 100%;
     text-align: center;
+    top: -100vh;
     left: -100vw;
+
     background: rgb(247, 245, 245);
     -webkit-transition: .3s;
     transition: .3s;
@@ -203,7 +201,8 @@ header .menu .menu-item .menu-link:hover {
   }
   header .menu.active {
     left: 0;
-    z-index: 999;
+    top: 7.9vh;
+    z-index: 897;
   }
 }
 
@@ -243,12 +242,12 @@ header .menu .menu-item .menu-link:hover {
 
  .Overview-Container .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .wrapper .class_overview, .wrapper .class_progress {
-  flex: 1;
+  width: 45%;
 }
 
 .wrapper .class_overview .heading {
@@ -261,3 +260,163 @@ header .menu .menu-item .menu-link:hover {
   color: var(--Color-14);
 }
 
+.wrapper .class_progress  .progress {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.wrapper .class_progress  .progress label{
+  font-size: 17pt;
+  margin-bottom: 20px;
+  color: var(--Color-12);
+}
+.wrapper .class_progress  .progress .progress_bar{
+  width: 100%;
+  background: var(--Color-9);
+  height: 5px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.wrapper .class_progress  .progress .progress_bar .progress_value{
+  width: 80%;
+  height: 100%;
+  background: var(--Color-7);
+  display: block;
+  border-radius: 50px;
+}
+
+.wrapper .class_progress  .physical_progress.progress .progress_bar .progress_value{
+  width: 40%;
+  background: var(--Color-3);
+}
+
+.wrapper .class_progress  .social_progress.progress .progress_bar .progress_value{
+  width: 60%;
+  background: var(--Color-4);
+}
+
+.gallery_box .wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+}
+.gallery_box .wrapper .img_sm_grp{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.gallery_box .wrapper .img_lg {
+  width: 600px;
+}
+.gallery_box .wrapper .image_lg img{
+  width: 100%;
+  border-radius: 10px;
+  transition: .5s;
+}
+.gallery_box .wrapper .image_lg img:hover {
+ transform: translateY(-10px);
+}
+.gallery_box .wrapper .img_sm_grp img{
+  width: 290px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.gallery_box .wrapper .img_sm_grp img:hover{
+  transform: translateY(-10px);
+}
+
+
+.learning_areas .heading {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+ .heading .curve {
+  font-family: var(--Sacramento);
+  font-size: 25pt;
+  font-weight: 300;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: var(--Dark-Orange);
+}
+
+ .heading .nunito {
+  font-family: var(--Comforta);
+  font-size: 30pt;
+  font-family: 700;
+  color: var(--Color-12);
+  margin-bottom: 20px;
+}
+
+
+
+.learning_areas .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+.learning_areas .cards .card{
+  text-align: center;
+  width: 300px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+  padding: 10px auto;
+  margin: 30px;
+}
+
+.learning_areas .cards .card .icon-bx {
+  
+width: 70px;
+height: 70px;
+background: #ecc6c6;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: .5s linear;
+
+}
+
+.learning_areas .cards .card .icon-bx:hover {
+  border-radius: 50%;
+  background: var(--White);
+  border: 2px dashed rgb(212, 111, 128);
+}
+
+.learning_areas .cards .card .icon {
+  font-size: 25pt;
+  color: rgb(212, 111, 128);
+
+}
+
+
+
+.learning_areas .cards .card .blue {
+  font-family: var(--Comforta);
+  font-size: 13pt;
+  font-weight: 800;
+  line-height: 130%;
+  color: var(--Color-12);
+  margin-bottom: 10px;
+  transition: .5s;
+}
+.learning_areas .cards .card:hover .blue {
+  color: var(--Color-8);
+}
+
+.learning_areas .cards .card .text {
+  line-height: 140%;
+  color: var(--Color-14);
+  font-size: 13px;
+}
