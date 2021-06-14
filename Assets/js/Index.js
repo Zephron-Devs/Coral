@@ -1,16 +1,30 @@
 var toggle = document.querySelector('.toggle');
 var menu = document.querySelector('.menu');
+var modalBtn = document.querySelector('.modal_btn');
+var modal = document.querySelector('.modal_overlay');
+var modalClose = document.querySelector('.modal_overlay .close');
 
 toggle.addEventListener('click', () => {
     toggle.classList.toggle('active');
     menu.classList.toggle('active');
-})
-
+});
 
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
+
+modalBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+});
+
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
+
+
+
+
 
 
 

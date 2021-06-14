@@ -424,3 +424,121 @@ border-radius: 10px;
   color: var(--Color-14);
   font-size: 13px;
 }
+
+.class_detail {
+  width: 350px;
+  height: auto;
+  border: 5px solid var(--Color-8);
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.class_detail .head {
+  font-size: 16pt;
+  margin-bottom: 20px;
+  color: var(--Color-12);
+}
+
+.class_detail .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: var(--Color-11);
+  letter-spacing: 2px;
+}
+
+.class_detail .row span {
+  color: var(--Color-7);
+}
+
+.class_detail .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background: var(--Color-12);
+  border-radius: 4px;
+  color: var(--White);
+}
+
+.class_detail hr {
+  border: 1px dashed var(--Color-14);
+}
+
+.contact_modal {
+  position: fixed;
+  top: 12%;
+  left: 30%;
+  right: 30%;
+  bottom: 10%;
+  background: #fff;
+  z-index: 1000;
+  border-radius: 8px;
+}
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.741);
+  display: none;
+  transition: 1s ease;
+}
+
+.modal_overlay.active {
+  display: block;
+}
+
+.contact_modal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20pt;
+  color: var(--Color-7);
+}
+
+.contact_modal .wrapper {
+  margin-top: 3vh;
+}
+
+.contact_modal .wrapper .head {
+  text-align: center;
+  color: var(--Color-12);
+  margin-bottom: 20px;
+  font-size: 20pt;
+}
+
+.contact_modal .form_control {
+  width: 100%;
+margin-bottom: 20px;
+}
+
+.contact_modal .form_control input, .contact_modal .form_control textarea {
+  min-width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: var(--Color-14);
+}
+
+.contact_modal .form_control textarea  {
+  max-height: 20vh;
+}
+
+.contact_modal .submit {
+  width: 100%;
+  display: inline-block;
+  padding: 12px;
+  color: var(--White);
+  background: var(--Color-12);
+  border-radius: 5px;
+  font-size: 16pt;
+  outline: none;
+  border: none;
+}
