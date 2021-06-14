@@ -340,7 +340,7 @@ header .menu .menu-item .menu-link:hover {
   text-align: center;
 }
 
- .heading .curve {
+.learning_areas .heading .curve {
   font-family: var(--Sacramento);
   font-size: 25pt;
   font-weight: 300;
@@ -350,7 +350,7 @@ header .menu .menu-item .menu-link:hover {
   color: var(--Dark-Orange);
 }
 
- .heading .nunito {
+.learning_areas .heading .nunito {
   font-family: var(--Comforta);
   font-size: 30pt;
   font-family: 700;
@@ -541,4 +541,115 @@ margin-bottom: 20px;
   font-size: 16pt;
   outline: none;
   border: none;
+}
+
+@media (max-width: 1200px) {
+  .gallery_box .wrapper .img_sm_grp img{
+    width: 250px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+  .learning_areas .cards .card{
+
+    margin: 20px;
+  }
+}
+
+@media (max-width: 930px) {
+  .gallery_box .wrapper .img_sm_grp img{
+    width: 200px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+}
+@media (max-width: 890px) {
+  .gallery_box .wrapper .img_sm_grp img{
+    width: 200px;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+  .Overview-Container .wrapper {
+  flex-direction: column;
+  }
+
+  .wrapper .class_overview, .wrapper .class_detail {
+    width: 90%;
+    margin: 5vh 0;
+  }
+
+  .gallery_box .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .gallery_box .wrapper .img_lg {
+    width: 80%;
+  }
+
+  .gallery_box .wrapper .img_sm_grp img{
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+
+  .learning_areas .heading {
+    width: 90%;
+
+  }
+  
+  .learning_areas .heading .curve {
+    font-family: var(--Sacramento);
+    font-size: 20pt;
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--Dark-Orange);
+  }
+  
+  .learning_areas .heading .nunito {
+    font-family: var(--Comforta);
+    font-size: 20pt;
+    font-family: 700;
+    color: var(--Color-12);
+    margin-bottom: 20px;
+  }
+  
+  .contact_modal {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    bottom: 15%;
+    background: #fff;
+    z-index: 1000;
+    border-radius: 8px;
+  }
+
+  .contact_modal .wrapper .head {
+    text-align: center;
+    color: var(--Color-12);
+    margin-bottom: 20px;
+    font-size: 17pt;
+  }
+
+  .contact_modal .form_control input, .contact_modal .form_control textarea {
+    min-width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 12pt;
+    border-radius: 6px;
+    background: var(--Color-14);
+  }
+
+  .contact_modal .form_control textarea  {
+    max-height: 15vh;
+  }
+
+
 }
