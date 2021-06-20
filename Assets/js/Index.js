@@ -1,36 +1,22 @@
 var toggle = document.querySelector('.toggle');
 var menu = document.querySelector('.menu');
-var modalBtn = document.querySelector('.modal_btn');
-var modal = document.querySelector('.modal_overlay');
-var modalClose = document.querySelector('.modal_overlay .close');
 
+
+
+// Toggle this is the toggle function 
 toggle.addEventListener('click', () => {
     toggle.classList.toggle('active');
     menu.classList.toggle('active');
 });
+
 
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-modalBtn.addEventListener('click', () => {
-    modal.classList.add('active');
-});
-
-modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-});
-
-
-
-
-
-
 
   $(document).ready(function(){
-
- 
 
     $('.testimonials').owlCarousel({
       items:1,
@@ -68,3 +54,16 @@ modalClose.addEventListener('click', () => {
       }
   });
   });
+
+  var modalBtn = document.querySelector('.modal_btn');
+var modal = document.querySelector('.modal_overlay');
+var modalClose = document.querySelector('.modal_overlay .close');
+
+  modalBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+});
+
+
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
