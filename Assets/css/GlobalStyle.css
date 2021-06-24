@@ -215,7 +215,7 @@ header .menu .menu-item .menu-link:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 30vh;
+    min-height: 30vh;
     background: var(--Dark-Orange);
     margin-top: 10vh;
     color: var(--White);

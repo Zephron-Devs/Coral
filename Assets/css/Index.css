@@ -1157,6 +1157,10 @@ border-radius: 10px;
     margin-left: 10px;
   }
 
+footer {
+  background: rgba(210, 209, 211, 0.248);
+}
+
   footer .wrapper {
     display: flex;
     justify-content: space-between;
@@ -1643,7 +1647,7 @@ footer {
 }
 
 .container {
-  padding: 3% 3%;
+  padding: 5% 3%;
 }
 
 .sec-2 .wrapper .particles.eclipse-bg {
@@ -1796,8 +1800,8 @@ width: 30px;
     
 .hero .showcase .text .cta {
   background: var(--Dark-Orange);
-  padding: 7px 20px;
-  margin-top: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
   font-size: 10pt;
   border-radius: 10px;
   font-family: var(--Comforta);
